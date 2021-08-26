@@ -1,0 +1,417 @@
+
+@charset "utf-8";
+@import url('notosanskr/NotoSansKR.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.67px;
+}
+
+/* 공통 요소 */
+.clearfix:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.pagew {
+    position: relative;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: relative;
+    display: block;
+    z-index: 999999;
+    height: 80px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    position: absolute;
+    left: 55px;
+    top: 20px;
+    display: block;
+    width: 150px;
+    height: 39px;
+    background: url('../images/logo.png') no-repeat center;
+}
+
+.gnb {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: block;
+}
+
+.lang {
+    position: absolute;
+    right: 70px;
+    top: 35px;
+    display: block;
+}
+
+.lang-list {
+    position: relative;
+    display: block;
+}
+
+.lang-list>li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.lang-list>li:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 11px;
+    background: #999;
+}
+
+.lang-list>li:last-child:after {
+    content: none;
+}
+
+
+.lang-list>li>a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #888;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 15px;
+}
+
+.lang-list>li:last-child>a {
+    margin-right: 0;
+}
+
+
+
+.lang-focus {
+    color: #000 !important;
+}
+
+
+/* 비주얼 */
+.visual {
+    position: relative;
+    display: block;
+    height: 910px;
+    overflow: hidden;
+
+    background: url('../images/img_visual01.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.visual .pagew {
+    padding-top: 180px;
+}
+
+.visual-tit {
+    position: relative;
+    display: block;
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 70px;
+
+    padding-top: 55px;
+}
+
+.visual-tit:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 5px;
+    background: #ed1c24;
+}
+
+
+.visual-tit span {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.visual-txt {
+    position: relative;
+    display: block;
+    font-size: 21px;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 45px;
+}
+
+.move-cate {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+
+    transform: translateX(-50%);
+
+    display: block;
+    width: 33px;
+    height: 33px;
+
+    background: url('../images/bg_common.png') no-repeat;
+    background-position-x: -122px;
+    background-position-y: 0px;
+
+    font-size: 0;
+}
+
+/* 사업분야 */
+.cate {
+    position: relative;
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 135px;
+}
+
+.cate-tit {
+    position: relative;
+    display: block;
+    font-size: 44px;
+    color: #111;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 25px;
+}
+
+.cate-tit:after {
+    content: '';
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 37px;
+    height: 4px;
+    background: #f00;
+}
+
+.cate-desc {
+    position: relative;
+    display: block;
+
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 100;
+    margin-bottom: 65px;
+}
+
+.cate-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.cate-list>li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 420px;
+    background: url('../images/img_business.png') no-repeat;
+    background-position-y: 0;
+}
+
+.cate-list>li:nth-child(1) {
+    background-position-x: 0px;
+}
+
+.cate-list>li:nth-child(2) {
+    background-position-x: -240px;
+}
+
+.cate-list>li:nth-child(3) {
+    background-position-x: -480px;
+}
+
+.cate-list>li:nth-child(4) {
+    background-position-x: -720px;
+}
+
+.cate-list>li:nth-child(5) {
+    background-position-x: -960px;
+}
+
+.cate-list>li>a {
+    position: relative;
+    display: block;
+    height: 100%;
+    background: rgba(243, 127, 37, 0.0);
+    transform: background 0.5s;
+}
+
+.cate-list>li>a:hover {
+    background: rgba(243, 127, 37, 1.0);
+}
+
+.cate-txt {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    padding-top: 100px;
+}
+
+.cate-img {
+    position: relative;
+    display: block;
+    background: url('../images/bg_common.png') no-repeat;
+    margin: 0 auto;
+    margin-top: 85px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.5s;
+}
+
+.cate-list>li>a:hover .cate-img {
+    visibility: visible;
+    opacity: 1.0;
+}
+
+.cate-list>li:nth-child(1) .cate-img {
+    width: 123px;
+    height: 112px;
+    background-position-x: -168px;
+    background-position-y: 0;
+}
+
+.cate-list>li:nth-child(2) .cate-img {
+    width: 123px;
+    height: 112px;
+    background-position-x: -301px;
+    background-position-y: 0;
+}
+
+.cate-list>li:nth-child(3) .cate-img {
+    width: 130px;
+    height: 106px;
+    background-position-x: 0;
+    background-position-y: -122px;
+}
+
+.cate-list>li:nth-child(4) .cate-img {
+    width: 123px;
+    height: 111px;
+    background-position-x: -140px;
+    background-position-y: -122px;
+}
+
+.cate-list>li:nth-child(5) .cate-img {
+    width: 102px;
+    height: 105px;
+    background-position-x: -280px;
+    background-position-y: -122px;
+}
+
+/* 게시판 */
+.board {
+    position: relative;
+    display: block;
+
+    padding: 55px 0;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+50,ff0000+50,58595b+50 */
+    background: #ff0000;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ff0000 50%, #ff0000 50%, #58595b 50%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ff0000 50%, #ff0000 50%, #58595b 50%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ff0000 50%, #ff0000 50%, #58595b 50%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#58595b', GradientType=1);
+    /* IE6-9 */
+}
+
+.board .pagew {
+    display: table;
+    table-layout: fixed;
+}
+
+
+.board-box {
+    position: relative;
+    display: table-cell;
+    width: 50%;
+}
+
+/* 고객센터 */
+.cs {
+    position: relative;
+    display: block;
+}
+
+/* About */
+.about {
+    position: relative;
+    display: block;
+}
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+}
